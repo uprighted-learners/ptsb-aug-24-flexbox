@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    /* ? Turns Flexbox on -- must be done on parent container */
+
+    flex-direction: row;
+    /* ? Specifies main axis, main start, and main end  */
+
+    flex-wrap: wrap;
+    /* ? Handles overflow  */
+
+    justify-content: center;
+    /* ? Handles flow along the main axis */
+
+    align-items: center;
+    /* ? Handles flow along the cross axis */
+
+    gap: 2em;
+
+    background-color: lightgray;
+    width: 50vw;
+    height: 50vh;
+}
+
+.flex-items {
+    background-color: rebeccapurple;
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+    color: white;
+}
+
+.flex-items:nth-child(4) {
+    order: -3
+    /* ? Changes the order of elements laid out in the HTML  */
+}
+
+.flex-items:nth-child(1) {
+    flex-grow: 2;
+    /* ? Changes the preset sizing */
+
+    align-self: flex-start;
+    /* ? Changes the cross axis of a single element */
+}
+
+.flex-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
